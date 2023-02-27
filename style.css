@@ -1,0 +1,308 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #13131F;
+    font-size: 16px;
+}
+
+.boas-vindas{
+    color: #b3b3b3;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+    background-color: #053915;
+    animation: boasVindas 5s cubic-bezier(.56,-0.53,.56,1.41) 1 forwards;
+    box-sizing: border-box;
+    height: 3.1em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #b3b3b3;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+.line{
+    height: 0.125em;
+    background: #0a9634;
+    border: none;
+    width: 90%;
+    animation: hrAnimation 1s 1s linear infinite;
+    margin: auto;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "about"
+    "experience"
+    "abilities"
+    "certified"
+    "footer"
+}
+
+.header{
+    text-align: center;
+    padding-top: 1.25em;
+    color: #b3b3b3;
+    grid-area: "header";
+}
+
+.header h1{
+    color: #0a9634;
+}
+
+.header nav{
+    padding-bottom: 1.875em;
+}
+
+.header nav a{
+    color:#b3b3b3;
+    font-size: 3.125em;
+    margin: 0.31em 0.3em;
+}
+
+.header-img{
+    height: 12em;
+    width: 12em;
+    border-radius: 50%;
+    margin: auto;
+    overflow:hidden;
+}
+
+.header-img img{
+    height: 12em;
+    width: 12em;
+}
+
+.header nav ul{
+    list-style-type: none;
+    margin: .8em 0;
+    padding: 0;
+}
+
+.header nav ul li{
+    display: inline-block;
+}
+
+.section{
+    text-align: center;
+    margin: 2em auto 3.2em;
+}
+
+.about-section{
+    grid-area: "about";
+}
+
+.experience-section{
+    grid-area: "experience";
+}
+
+.abilities-section{
+    grid-area: "abilities"
+}
+
+.certified-section{
+    grid-area: "certified";
+    padding-bottom: 5em;
+}
+
+.section p{
+    color: #b3b3b3;
+    text-align: left;
+}
+
+.section ul{
+    list-style-type: none;
+    text-align: left;
+    margin: auto;
+    padding: 0;
+}
+
+.section a{
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: .8em;
+    text-align: left;
+    color: #b3b3b3;
+}
+
+
+.section a:hover{
+    scale: 1.05;
+}
+
+.section a:visited{
+    color: #b3b3b3;
+}
+
+.footer{
+    grid-area: footer;
+    height: 6.25em;
+    border-top: 2px solid #2F8B20;
+    text-align: center;
+    padding-top: 2em;
+    box-sizing: border-box;
+    color: #b3b3b3;
+    font-size: 1em;
+}
+
+
+.fa-linkedin:hover{
+    color: #0A66C2;
+}
+
+.fa-whatsapp:hover{
+    color: #0DC143;
+}
+
+.fa-square-github:hover{
+    color: #004589;
+}
+
+.fa-instagram:hover{
+    background: linear-gradient(180deg, #4A23BC 0%, #C3276A 51.56%, #DD903F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.fa-hourglass-start{
+    color: #b3b3b3;
+    font-size: 1em;
+    animation: rotate 5s 1s linear infinite;
+}
+
+.fa-check{
+    color: #b3b3b3;
+    font-size: 1em;
+}
+
+@keyframes hrAnimation{
+    0%{background: linear-gradient(90deg, #2F8B20 0%, #C6C6C6 0%, #2F8B20 10%);}
+    3%{background: linear-gradient(90deg, #2F8B20 3%, #C6C6C6 4%, #2F8B20 16%);}
+    5%{background: linear-gradient(90deg, #2F8B20 5%, #C6C6C6 7%, #2F8B20 18%);}
+    7%{background: linear-gradient(90deg, #2F8B20 7%, #C6C6C6 10%, #2F8B20 20%);}
+    9%{background: linear-gradient(90deg, #2F8B20 9%, #C6C6C6 13%, #2F8B20 22%);}
+    11%{background: linear-gradient(90deg, #2F8B20 11%, #C6C6C6 16%, #2F8B20 23%);}
+    13%{background: linear-gradient(90deg, #2F8B20 13%, #C6C6C6 19%, #2F8B20 25%);}
+    15%{background: linear-gradient(90deg, #2F8B20 15%, #C6C6C6 22%, #2F8B20 27%);}
+    17%{background: linear-gradient(90deg, #2F8B20 17%, #C6C6C6 25%, #2F8B20 29%);}
+    19%{background: linear-gradient(90deg, #2F8B20 19%, #C6C6C6 28%, #2F8B20 31%);}
+    21%{background: linear-gradient(90deg, #2F8B20 21%, #C6C6C6 31%, #2F8B20 33%);}
+    23%{background: linear-gradient(90deg, #2F8B20 23%, #C6C6C6 33%, #2F8B20 35%);}
+    25%{background: linear-gradient(90deg, #2F8B20 25%, #C6C6C6 35%, #2F8B20 37%);}
+    27%{background: linear-gradient(90deg, #2F8B20 27%, #C6C6C6 38%, #2F8B20 39%);}
+    29%{background: linear-gradient(90deg, #2F8B20 29%, #C6C6C6 41%, #2F8B20 41%);}
+    31%{background: linear-gradient(90deg, #2F8B20 31%, #C6C6C6 44%, #2F8B20 43%);}
+    33%{background: linear-gradient(90deg, #2F8B20 33%, #C6C6C6 47%, #2F8B20 45%);}
+    35%{background: linear-gradient(90deg, #2F8B20 35%, #C6C6C6 50%, #2F8B20 47%);}
+    37%{background: linear-gradient(90deg, #2F8B20 37%, #C6C6C6 53%, #2F8B20 49%);}
+    39%{background: linear-gradient(90deg, #2F8B20 39%, #C6C6C6 56%, #2F8B20 51%);}
+    41%{background: linear-gradient(90deg, #2F8B20 41%, #C6C6C6 59%, #2F8B20 53%);}
+    43%{background: linear-gradient(90deg, #2F8B20 43%, #C6C6C6 62%, #2F8B20 55%);}
+    45%{background: linear-gradient(90deg, #2F8B20 45%, #C6C6C6 65%, #2F8B20 57%);}
+    47%{background: linear-gradient(90deg, #2F8B20 47%, #C6C6C6 68%, #2F8B20 59%);}
+    49%{background: linear-gradient(90deg, #2F8B20 49%, #C6C6C6 71%, #2F8B20 61%);}
+    51%{background: linear-gradient(90deg, #2F8B20 51%, #C6C6C6 74%, #2F8B20 63%);}
+    53%{background: linear-gradient(90deg, #2F8B20 53%, #C6C6C6 77%, #2F8B20 65%);}
+    55%{background: linear-gradient(90deg, #2F8B20 55%, #C6C6C6 80%, #2F8B20 67%);}
+    57%{background: linear-gradient(90deg, #2F8B20 57%, #C6C6C6 83%, #2F8B20 69%);}
+    59%{background: linear-gradient(90deg, #2F8B20 59%, #C6C6C6 86%, #2F8B20 71%);}
+    61%{background: linear-gradient(90deg, #2F8B20 61%, #C6C6C6 89%, #2F8B20 73%);}
+    63%{background: linear-gradient(90deg, #2F8B20 63%, #C6C6C6 92%, #2F8B20 75%);}
+    65%{background: linear-gradient(90deg, #2F8B20 65%, #C6C6C6 95%, #2F8B20 77%);}
+    67%{background: linear-gradient(90deg, #2F8B20 67%, #C6C6C6 98%, #2F8B20 79%);}
+    69%{background: linear-gradient(90deg, #2F8B20 69%, #C6C6C6 100%, #2F8B20 81%);}
+    71%{background: linear-gradient(90deg, #2F8B20 71%, #C6C6C6 103%, #2F8B20 83%);}
+    73%{background: linear-gradient(90deg, #2F8B20 73%, #C6C6C6 106%, #2F8B20 85%);}
+    75%{background: linear-gradient(90deg, #2F8B20 75%, #C6C6C6 109%, #2F8B20 87%);}
+    77%{background: linear-gradient(90deg, #2F8B20 77%, #C6C6C6 112%, #2F8B20 89%);}
+    79%{background: linear-gradient(90deg, #2F8B20 79%, #C6C6C6 115%, #2F8B20 91%);}
+    81%{background: linear-gradient(90deg, #2F8B20 81%, #C6C6C6 118%, #2F8B20 93%);}
+    83%{background: linear-gradient(90deg, #2F8B20 83%, #C6C6C6 121%, #2F8B20 95%);}
+    85%{background: linear-gradient(90deg, #2F8B20 85%, #C6C6C6 123%, #2F8B20 97%);}
+    87%{background: linear-gradient(90deg, #2F8B20 87%, #C6C6C6 126%, #2F8B20 99%);}
+    89%{background: linear-gradient(90deg, #2F8B20 89%, #C6C6C6 129%, #2F8B20 101%);}
+    91%{background: linear-gradient(90deg, #2F8B20 91%, #C6C6C6 132%, #2F8B20 103%);}
+    93%{background: linear-gradient(90deg, #2F8B20 93%, #C6C6C6 135%, #2F8B20 105%);}
+    95%{background: linear-gradient(90deg, #2F8B20 95%, #C6C6C6 138%, #2F8B20 107%);}
+    97%{background: linear-gradient(90deg, #2F8B20 97%, #C6C6C6 141%, #2F8B20 109%);}
+    99%{background: linear-gradient(90deg, #2F8B20 99%, #C6C6C6 144%, #2F8B20 112%);}
+    100%{background:linear-gradient(90deg, #2F8B20 0%, #C6C6C6 -5%, #2F8B20 10%);}
+    
+}
+
+@keyframes rotate{
+    0%, 25%{
+        transform: rotate(0deg);
+    }
+    50%, 75%{transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes boasVindas{
+    0%, 100%{
+        transform: translateY(-3em)
+    }
+
+    47%, 90%{
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 900px){
+    .container{
+        max-width: 80%;
+        grid-template-areas:
+        "header header"
+        "header header"
+        "about experience"
+        "abilities certified"
+        "footer footer";       
+    }
+    
+    .line:nth-child(7){
+        display: none;
+    }
+
+    .header{
+        grid-area: header;
+    }
+    
+    .about-section{
+        grid-area: about;
+        width: 45%;
+    }
+
+    .experience-section{
+        grid-area: experience;
+        width: 45%;
+    }
+
+    .abilities{
+        grid-area: abilities;
+        width: 45%;
+    }
+
+    .certified{
+        grid-area: certified;
+        width: 45%;
+        position: relative;
+    }
+}
+
+
+
+
